@@ -34,7 +34,7 @@ export default function Events() {
       <div className="card p-6 min-h-[500px]">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-xl bg-orange-500/10 text-orange-500 flex items-center justify-center">
+            <div className="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
               <CalendarDays size={20} />
             </div>
             <h2 className="text-xl font-heading font-bold text-slate-900">Event Feed</h2>
@@ -59,11 +59,11 @@ export default function Events() {
 
                 <div className="space-y-2 text-sm font-medium text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-100 mt-auto">
                   <div className="flex items-center gap-2">
-                    <CalendarDays size={14} className="text-orange-500" />
+                    <CalendarDays size={14} className="text-primary" />
                     <span>{event.date}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <MapPin size={14} className="text-emerald-500" />
+                    <MapPin size={14} className="text-purple-500" />
                     <span>{event.location}</span>
                   </div>
                 </div>

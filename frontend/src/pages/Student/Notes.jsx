@@ -87,7 +87,7 @@ export default function Notes() {
         <div className="lg:col-span-2 card p-6 flex flex-col space-y-6">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-xl bg-orange-500/10 text-orange-500 flex items-center justify-center">
+              <div className="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
                 <BookOpen size={20} />
               </div>
               <h2 className="text-xl font-heading font-bold text-slate-900">Approved Notes</h2>

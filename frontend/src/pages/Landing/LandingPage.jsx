@@ -20,8 +20,8 @@ const featureCards = [
     icon: CalendarDays,
     title: "Smart Timetable",
     description: "Daily classes, rooms, and quick filters by branch and year in one focused view.",
-    color: "text-orange-500",
-    bg: "bg-orange-500/10",
+    color: "text-purple-600",
+    bg: "bg-purple-600/10",
   },
   {
     icon: LineChart,
@@ -101,7 +101,7 @@ export default function LandingPage() {
       <header className="sticky top-0 z-50 border-b border-slate-200/50 bg-white/80 backdrop-blur-xl transition-all">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <Link to="/" className="inline-flex items-center gap-3 group">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-primary to-orange-600 text-white flex items-center justify-center shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform">
+            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-primary to-purple-800 text-white flex items-center justify-center shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform">
               <GraduationCap size={20} strokeWidth={2.5} />
             </div>
             <div>
@@ -145,7 +145,7 @@ export default function LandingPage() {
                 </span>
                 <h1 className="text-5xl sm:text-6xl font-heading font-black leading-[1.1] tracking-tight text-slate-900 mt-4">
                   Manage college life <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-600">beautifully.</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-800">beautifully.</span>
                 </h1>
                 <p className="max-w-xl text-lg text-slate-500 mt-6 leading-relaxed font-medium">
                   CampusHub unifies timetable, attendance, notes, events, and AI study help so students and admins work from one delightfully clean workspace.
@@ -245,8 +245,8 @@ export default function LandingPage() {
               </div>
               
               {/* Decorative graphic elements around mockup */}
-              <div className="absolute -bottom-6 -right-6 h-24 w-24 bg-gradient-to-br from-primary to-orange-500 rounded-2xl -z-10 blur-xl opacity-30"></div>
-              <div className="absolute -top-6 -left-6 h-24 w-24 bg-gradient-to-br from-accent to-emerald-500 rounded-full -z-10 blur-xl opacity-30"></div>
+              <div className="absolute -bottom-6 -right-6 h-24 w-24 bg-gradient-to-br from-primary to-purple-800 rounded-2xl -z-10 blur-xl opacity-30"></div>
+              <div className="absolute -top-6 -left-6 h-24 w-24 bg-gradient-to-br from-accent to-slate-200 rounded-full -z-10 blur-xl opacity-30"></div>
             </motion.div>
           </div>
         </section>
@@ -373,7 +373,7 @@ export default function LandingPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="rounded-[2.5rem] bg-gradient-to-br from-primary to-orange-600 p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30"
+            className="rounded-[2.5rem] bg-gradient-to-br from-primary to-purple-800 p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30"
           >
             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay pointer-events-none"></div>
             

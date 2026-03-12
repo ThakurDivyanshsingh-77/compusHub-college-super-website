@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { User, Mail, Lock, GraduationCap, ArrowRight, Sparkles } from "lucide-react";
@@ -42,12 +42,12 @@ export default function Register() {
     <div className="min-h-screen app-shell flex">
       <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
         <div className="absolute inset-0 pattern-grid opacity-20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(230,122,63,0.35),transparent_40%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_90%_0%,rgba(47,158,110,0.3),transparent_36%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(147,51,234,0.35),transparent_40%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_90%_0%,rgba(168,85,247,0.3),transparent_36%)]" />
 
         <div className="relative z-10 flex flex-col justify-center px-14 xl:px-20">
           <div className="flex items-center gap-3 mb-10">
-            <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-orange-500 to-emerald-600 flex items-center justify-center shadow-strong">
+            <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-primary to-purple-800 flex items-center justify-center shadow-strong">
               <GraduationCap size={27} className="text-white" />
             </div>
             <div>
@@ -74,7 +74,7 @@ export default function Register() {
             ].map((point) => (
               <div key={point} className="flex items-center gap-2 text-slate-200">
                 <span className="h-6 w-6 rounded-full bg-white/10 border border-white/15 inline-flex items-center justify-center">
-                  <Sparkles size={12} className="text-orange-300" />
+                  <Sparkles size={12} className="text-purple-300" />
                 </span>
                 <span>{point}</span>
               </div>
@@ -90,7 +90,7 @@ export default function Register() {
               Back to home
             </Link>
             <div className="lg:hidden inline-flex items-center gap-2 text-slate-900">
-              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-orange-500 to-emerald-600 text-white flex items-center justify-center">
+              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-primary to-purple-800 text-white flex items-center justify-center">
                 <GraduationCap size={16} />
               </div>
               <span className="font-semibold">CampusHub</span>
@@ -131,7 +131,7 @@ export default function Register() {
 
             <p className="mt-5 text-center text-sm text-slate-600">
               Already have an account?{" "}
-              <Link to="/login" className="font-semibold text-orange hover:underline">
+              <Link to="/login" className="font-semibold text-primary hover:underline">
                 Sign in
               </Link>
             </p>

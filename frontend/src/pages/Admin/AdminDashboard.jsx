@@ -39,13 +39,13 @@ export default function AdminDashboard() {
         <StatCard label="Students" value={data.overview.totalStudents} accent="primary">
           <Users size={24} className="text-white" />
         </StatCard>
-        <StatCard label="Notes" value={data.overview.uploadedNotes} accent="orange">
+        <StatCard label="Notes" value={data.overview.uploadedNotes} accent="purple">
           <NotebookPen size={24} className="text-white" />
         </StatCard>
         <StatCard label="Events" value={data.overview.events} accent="purple">
           <CalendarClock size={24} className="text-white" />
         </StatCard>
-        <StatCard label="Attendance Alerts" value={data.overview.attendanceReports} accent="green">
+        <StatCard label="Attendance Alerts" value={data.overview.attendanceReports} accent="primary">
           <BarChart3 size={24} className="text-white" />
         </StatCard>
       </div>

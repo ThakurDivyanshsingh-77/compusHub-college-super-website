@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#f97316", // Orange
-        orange: "#f97316",
-        accent: "#10b981", // Emerald Green
-        green: "#10b981",
+        primary: "#9333ea", // Purple 600
+        orange: "#9333ea", // Kept alias to avoid breaking uncaught classes immediately, mapped to purple
+        accent: "#f8fafc", // Very light slate (almost white)
+        green: "#f8fafc", // Mapped to light color for fallback
         // Neutral scale
         slate: {
           50: '#f8fafc',

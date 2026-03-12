@@ -44,19 +44,19 @@ const ModernDashboard = () => {
   ];
 
   const eventAvatars = [
-    { initials: 'AK', color: 'bg-orange-500' },
-    { initials: 'MK', color: 'bg-emerald-500' },
+    { initials: 'AK', color: 'bg-primary' },
+    { initials: 'MK', color: 'bg-purple-800' },
     { initials: 'RJ', color: 'bg-pink-500' },
   ];
 
   return (
-    <div className="flex h-screen bg-gradient-to-br from-slate-50 via-emerald-50 to-orange-50">
+    <div className="flex h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-white">
       {/* Sidebar */}
       <div className="w-64 bg-white shadow-lg flex flex-col border-r border-slate-200">
         {/* Logo */}
         <div className="p-6 border-b border-slate-200">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-emerald-500 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-br from-primary to-purple-800 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">CH</span>
             </div>
             <div>
@@ -77,7 +77,7 @@ const ModernDashboard = () => {
                 onClick={() => setActiveMenu(item.id)}
                 className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 ${
                   isActive
-                    ? 'bg-gradient-to-r from-orange-500 to-emerald-500 text-white shadow-lg shadow-orange-500/30'
+                    ? 'bg-gradient-to-r from-primary to-purple-800 text-white shadow-lg shadow-primary/30'
                     : 'text-slate-600 hover:bg-slate-100'
                 }`}
               >
@@ -112,7 +112,7 @@ const ModernDashboard = () => {
                   placeholder="Search classes, notes, events..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-orange-500 focus:bg-white transition-all duration-200"
+                  className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-primary focus:bg-white transition-all duration-200"
                 />
               </div>
             </div>
@@ -123,7 +123,7 @@ const ModernDashboard = () => {
                 <Bell size={20} />
                 <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full animate-pulse" />
               </button>
-              <div className="h-10 w-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg cursor-pointer hover:shadow-lg transition-all duration-200">
+              <div className="h-10 w-10 bg-gradient-to-br from-primary to-purple-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg cursor-pointer hover:shadow-lg transition-all duration-200">
                 RK
               </div>
               <div className="flex flex-col">
@@ -145,7 +145,7 @@ const ModernDashboard = () => {
           {/* First Row - 3 Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Today's Classes Card */}
-            <div className="group bg-gradient-to-br from-orange-500 via-orange-600 to-emerald-600 rounded-2xl p-6 text-white shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden relative">
+            <div className="group bg-gradient-to-br from-purple-500 via-primary to-purple-800 rounded-2xl p-6 text-white shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden relative">
               <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-white transition-opacity duration-300" />
               <div className="absolute top-2 right-2 opacity-20 text-white">
                 <Rocket size={60} />
@@ -172,14 +172,14 @@ const ModernDashboard = () => {
                   <span>Dr. Mehta</span>
                 </div>
 
-                <button className="w-full bg-white text-orange-600 font-semibold py-2.5 rounded-lg hover:shadow-lg transition-all duration-200">
+                <button className="w-full bg-white text-primary font-semibold py-2.5 rounded-lg hover:shadow-lg transition-all duration-200">
                   View Timetable
                 </button>
               </div>
             </div>
 
             {/* Attendance Card */}
-            <div className="group bg-gradient-to-br from-orange-500 via-amber-500 to-red-500 rounded-2xl p-6 text-white shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden relative">
+            <div className="group bg-gradient-to-br from-primary via-purple-600 to-purple-800 rounded-2xl p-6 text-white shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden relative">
               <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-white transition-opacity duration-300" />
 
               <div className="relative z-10">
@@ -272,7 +272,7 @@ const ModernDashboard = () => {
           {/* Second Row - 2 Cards + Table */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
             {/* Notes Library */}
-            <div className="group bg-gradient-to-br from-orange-500 to-emerald-500 rounded-2xl p-6 text-white shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div className="group bg-gradient-to-br from-primary to-purple-800 rounded-2xl p-6 text-white shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-white transition-opacity" />
 
               <div className="relative z-10">
@@ -287,14 +287,14 @@ const ModernDashboard = () => {
                 <h3 className="text-2xl font-bold mb-1">24 files</h3>
                 <p className="text-sm text-white/80 mb-6">Room 459</p>
 
-                <button className="w-full bg-white text-emerald-600 font-semibold py-2 rounded-lg hover:shadow-lg transition-all duration-200 text-sm">
+                <button className="w-full bg-white text-primary font-semibold py-2 rounded-lg hover:shadow-lg transition-all duration-200 text-sm">
                   Browse Notes
                 </button>
               </div>
             </div>
 
             {/* More Resources */}
-            <div className="group bg-gradient-to-br from-emerald-900 via-emerald-800 to-slate-900 rounded-2xl p-6 text-white shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div className="group bg-gradient-to-br from-purple-900 via-purple-800 to-slate-900 rounded-2xl p-6 text-white shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               <div className="relative z-10">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-2">
@@ -306,14 +306,14 @@ const ModernDashboard = () => {
                 <h3 className="text-2xl font-bold mb-1">Premium</h3>
                 <p className="text-sm text-white/80 mb-6">Access all resources</p>
 
-                <button className="w-full bg-white text-emerald-700 font-semibold py-2 rounded-lg hover:shadow-lg transition-all duration-200 text-sm">
+                <button className="w-full bg-white text-purple-700 font-semibold py-2 rounded-lg hover:shadow-lg transition-all duration-200 text-sm">
                   Explore
                 </button>
               </div>
             </div>
 
             {/* Upcoming Events */}
-            <div className="md:col-span-2 group bg-gradient-to-br from-lime-300 to-green-400 rounded-2xl p-6 text-slate-900 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div className="md:col-span-2 group bg-gradient-to-br from-purple-300 to-purple-400 rounded-2xl p-6 text-slate-900 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               <div className="absolute inset-0 opacity-0 group-hover:opacity-5 bg-white transition-opacity" />
 
               <div className="relative z-10">
@@ -337,7 +337,7 @@ const ModernDashboard = () => {
                       </div>
                     ))}
                   </div>
-                  <button className="bg-white text-green-600 font-semibold px-4 py-2 rounded-lg hover:shadow-lg transition-all duration-200 text-sm ml-auto">
+                  <button className="bg-white text-primary font-semibold px-4 py-2 rounded-lg hover:shadow-lg transition-all duration-200 text-sm ml-auto">
                     Start Learning
                   </button>
                 </div>
@@ -349,10 +349,10 @@ const ModernDashboard = () => {
           <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
             <div className="px-6 py-4 border-b border-slate-200 flex items-center justify-between">
               <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
-                <Calendar size={20} className="text-orange-500" />
+                <Calendar size={20} className="text-primary" />
                 Upcoming Classes
               </h3>
-              <button className="text-orange-600 font-semibold hover:text-orange-700 flex items-center gap-1 text-sm">
+              <button className="text-primary font-semibold hover:text-purple-700 flex items-center gap-1 text-sm">
                 View Full <ChevronRight size={16} />
               </button>
             </div>
@@ -377,7 +377,7 @@ const ModernDashboard = () => {
                       >
                         <td className="px-6 py-4">
                           <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600">
+                            <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center text-primary">
                               <Icon size={16} />
                             </div>
                             <span className="font-medium text-slate-900">{classItem.subject}</span>
@@ -385,7 +385,7 @@ const ModernDashboard = () => {
                         </td>
                         <td className="px-6 py-4">
                           <div className="flex items-center gap-2">
-                            <div className="w-6 h-6 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                            <div className="w-6 h-6 bg-gradient-to-br from-purple-400 to-primary rounded-full flex items-center justify-center text-white text-xs font-bold">
                               {classItem.teacher.charAt(0)}
                             </div>
                             <span className="text-slate-600">{classItem.teacher}</span>
@@ -393,7 +393,7 @@ const ModernDashboard = () => {
                         </td>
                         <td className="px-6 py-4 text-slate-600">{classItem.time}</td>
                         <td className="px-6 py-4">
-                          <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">{classItem.room}</span>
+                          <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">{classItem.room}</span>
                         </td>
                       </tr>
                     );

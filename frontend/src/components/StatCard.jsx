@@ -1,8 +1,8 @@
 export default function StatCard({ label, value, accent = "primary", children }) {
   const accentMap = {
-    primary: "from-primary to-orange-500 shadow-primary/20",
-    orange: "from-orange-500 to-amber-500 shadow-orange-500/20",
-    green: "from-accent to-emerald-500 shadow-accent/20",
+    primary: "from-primary to-purple-800 shadow-primary/20",
+    orange: "from-purple-500 to-primary shadow-primary/20",
+    green: "from-slate-200 to-white text-slate-800 shadow-slate-200/50",
     purple: "from-indigo-500 to-purple-500 shadow-indigo-500/20",
   };
 

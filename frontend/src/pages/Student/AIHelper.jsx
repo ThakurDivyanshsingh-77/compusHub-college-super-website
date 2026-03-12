@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Bot, Sparkles } from "lucide-react";
 import DashboardLayout from "../../layouts/DashboardLayout";
 import { askStudyHelper } from "../../services/studentService";
@@ -42,7 +42,7 @@ export default function AIHelper() {
 
       <div className="soft-panel p-4 sm:p-5 space-y-4">
         <div className="inline-flex items-center gap-2 text-slate-900">
-          <Bot size={18} className="text-orange" />
+          <Bot size={18} className="text-primary" />
           <span className="section-title">Ask AI</span>
         </div>
 
@@ -62,7 +62,7 @@ export default function AIHelper() {
                 key={item.key}
                 className={`rounded-full px-3 py-1.5 text-xs font-semibold border transition-colors ${
                   task === item.key
-                    ? "bg-orange text-white border-orange"
+                    ? "bg-primary text-white border-primary"
                     : "border-slate-200 text-slate-600 bg-white hover:bg-slate-50"
                 }`}
                 onClick={() => setTask(item.key)}

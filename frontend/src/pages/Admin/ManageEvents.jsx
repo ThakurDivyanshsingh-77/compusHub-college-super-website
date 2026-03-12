@@ -81,7 +81,7 @@ export default function ManageEvents() {
       <div className="grid lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 card p-6 flex flex-col">
           <div className="flex items-center gap-3 mb-6">
-            <div className="h-10 w-10 rounded-xl bg-orange-500/10 text-orange-500 flex items-center justify-center">
+            <div className="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
               <CalendarRange size={20} />
             </div>
             <h2 className="text-xl font-heading font-bold text-slate-900">Events List</h2>

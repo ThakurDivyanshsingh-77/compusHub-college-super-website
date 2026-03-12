@@ -17,8 +17,8 @@ import { useAuth } from "../../context/AuthContext";
 const MetricCard = ({ label, value, meta, icon: Icon, tone = "primary" }) => {
   const toneMap = {
     primary: "bg-primary/10 text-primary border-primary/20",
-    amber: "bg-orange-500/10 text-orange-500 border-orange-500/20",
-    mint: "bg-accent/10 text-accent border-accent/20",
+    amber: "bg-purple-100 text-purple-700 border-purple-200",
+    mint: "bg-green-100 text-green-700 border-green-200",
   };
 
   const badgeTone = toneMap[tone] || toneMap.primary;
@@ -42,7 +42,7 @@ const MetricCard = ({ label, value, meta, icon: Icon, tone = "primary" }) => {
 const ProgressBar = ({ value }) => (
   <div className="w-full h-3 rounded-full bg-slate-100 overflow-hidden shadow-inner">
     <div
-      className="h-full rounded-full bg-gradient-to-r from-primary to-orange-400 transition-all duration-500"
+      className="h-full rounded-full bg-gradient-to-r from-primary to-purple-500 transition-all duration-500"
       style={{ width: `${Math.min(100, Math.max(0, value || 0))}%` }}
     />
   </div>
@@ -209,11 +209,11 @@ export default function StudentDashboard() {
           <div className="card p-6 flex-1 flex flex-col">
             <div className="flex items-start justify-between gap-3 mb-6">
               <div>
-                <div className="text-xs font-bold uppercase tracking-wider text-accent mb-1">Health</div>
+                <div className="text-xs font-bold uppercase tracking-wider text-primary mb-1">Health</div>
                 <div className="text-4xl font-heading font-bold text-slate-900 tracking-tight">{attendance}%</div>
                 <p className="text-xs font-medium text-slate-500 mt-1">{attendanceStatus}</p>
               </div>
-              <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center text-accent">
+              <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                 <GraduationCap size={20} strokeWidth={2.5} />
               </div>
             </div>
@@ -226,7 +226,7 @@ export default function StudentDashboard() {
                     <span className="font-bold">Low in:</span> {overview.lowAttendanceSubjects.join(", ")}
                   </p>
                 ) : (
-                  <p className="text-xs font-medium text-accent bg-accent/10 p-2 rounded-lg border border-accent/20">
+                  <p className="text-xs font-medium text-green-700 bg-green-50 p-2 rounded-lg border border-green-200">
                     All subjects above 75%. Great job!
                   </p>
                 )}
@@ -324,7 +324,7 @@ export default function StudentDashboard() {
                     <div className="flex-1 min-w-0 pt-1">
                       <div className="text-sm font-heading font-bold text-slate-900 truncate group-hover:text-primary transition-colors">{event.title}</div>
                       <div className="flex items-center gap-2 mt-1.5 xs:mt-2 text-[11px] font-medium text-slate-500">
-                        <MapPin size={12} className="text-slate-400 group-hover:text-accent transition-colors" />
+                        <MapPin size={12} className="text-slate-400 group-hover:text-primary transition-colors" />
                         <span className="truncate">{event.location}</span>
                       </div>
                     </div>
@@ -336,7 +336,7 @@ export default function StudentDashboard() {
             </div>
           </div>
 
-          <div className="card p-6 border-primary/20 bg-gradient-to-br from-white to-orange-50/50">
+          <div className="card p-6 border-primary/20 bg-gradient-to-br from-white to-purple-50/50">
             <div className="text-sm font-heading font-bold text-slate-900 mb-4 flex items-center gap-2">
               <span className="h-6 w-6 rounded-md bg-primary/10 text-primary flex items-center justify-center text-xs">💡</span>
               Study Tips
