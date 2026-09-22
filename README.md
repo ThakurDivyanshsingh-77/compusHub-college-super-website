@@ -1,31 +1,64 @@
-# CampusHub – College Super Website 🎓🏛️
+<div align="center">
 
-CampusHub is a comprehensive, full-stack college super-portal engineered to streamline campus life and academic management. By bringing together student dashboards, faculty tools, and administrative services under one roof, it serves as a centralized hub for the entire university community.
+<img
+  src="./assets/campushub-header.gif"
+  width="100%"
+  alt="CampusHub"
+/>
+
+# 🎓 CAMPUSHUB
+
+### College Super Website & Campus Management Platform
+
+<p>
+  A centralized digital ecosystem connecting students,
+  faculty and administrators through one modern platform.
+</p>
+
+<br />
+
+<a href="YOUR_LIVE_DEMO_URL">
+  <img
+    src="https://img.shields.io/badge/LIVE_DEMO-2563EB?style=for-the-badge&logo=vercel&logoColor=white"
+    alt="Live Demo"
+  />
+</a>
+
+<a href="https://github.com/YOUR_USERNAME/compusHub-college-super-website">
+  <img
+    src="https://img.shields.io/badge/SOURCE_CODE-111827?style=for-the-badge&logo=github&logoColor=white"
+    alt="Source Code"
+  />
+</a>
+
+<br /><br />
+
+<img src="https://img.shields.io/badge/STATUS-IN_DEVELOPMENT-2563EB?style=flat-square" />
+<img src="https://img.shields.io/badge/FULL_STACK-MERN-111827?style=flat-square" />
+<img src="https://img.shields.io/badge/RESPONSIVE-YES-16A34A?style=flat-square" />
+
+</div>
 
 ---
 
-## 🚀 Key Features
+# 🎓 About CampusHub
 
-* **Centralized Dashboard:** Unified access points for students, faculty, and administrative staff.
-* **Modular Architecture:** Structured separation between the backend server and frontend client interface (`backend`/`frontend`).
-* **Comprehensive Documentation:** Detailed markdown and PDF documentation included directly in the repository for seamless onboarding.
-* **Responsive Design:** Optimized for smooth usability across all devices.
+**CampusHub** is a full-stack college super-portal designed to bring essential academic and campus services together in one centralized platform.
 
----
+Instead of students, faculty and administrators relying on multiple disconnected systems, CampusHub provides a unified digital environment for managing everyday campus activities.
 
-## 🛠️ Tech Stack
-
-* **Frontend:** Modern JavaScript/TypeScript framework, HTML5, CSS3 / Tailwind CSS (`frontend`)
-* **Backend:** Node.js, Express.js (`backend`)
-* **Database:** MongoDB
-
----
-
-## 📁 Project Structure
+The platform is designed around three primary user groups:
 
 ```text
-compusHub-college-super-website/
-├── backend/                        # Server-side logic, controllers, models, and routes
-├── frontend/                       # Client-side user interface components
-├── CampusHub_Project_Documentation.md # Detailed project documentation
-└── CampusHub_Project_Documentation.pdf # PDF reference guide
+                    CAMPUSHUB
+                        │
+          ┌─────────────┼─────────────┐
+          │             │             │
+          ▼             ▼             ▼
+      STUDENTS       FACULTY       ADMIN
+          │             │             │
+          └─────────────┼─────────────┘
+                        │
+                        ▼
+               CENTRALIZED CAMPUS
+                   ECOSYSTEM
